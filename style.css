@@ -5,14 +5,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    min-height: 100vh; /* ocupar toda a altura da tela */
     margin: 0;
+    padding: 20px;
 }
 
-button {
-    background-color: #64A712;
-    color: white;
-    font-family: "Bai Jamjuree", sans-serif;
+main {
+    text-align: center;
+    max-width: 600px;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .passo {
@@ -20,14 +28,28 @@ button {
 }
 
 .passo.ativo {
-    display:block;
+    display: block;
 }
 
-main {
-    text-align: center;
-    max-width: 90%;
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1.1rem;
 }
 
-img {
-    max-width: 90%;
+button {
+    background-color: #64A712;
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px 8px 0 8px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7BC41A;
 }
